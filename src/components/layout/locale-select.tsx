@@ -7,7 +7,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/layout/dropdown-menu";
 import { cn } from "../../lib/utils";
 import { useLocale, useTranslations } from "next-intl";
 import { supportedLocales } from "../../i18n/locales";
