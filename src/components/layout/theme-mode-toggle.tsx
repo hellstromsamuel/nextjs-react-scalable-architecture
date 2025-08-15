@@ -36,8 +36,8 @@ export function ThemeModeToggle({
           className={className}
         >
           <div className="flex items-center gap-2">
-            <Sun className="size-4 dark:hidden" />
-            <Moon className="size-4 hidden dark:block" />
+            <Sun className="size-4 text-yellow-500 dark:hidden" />
+            <Moon className="size-4 text-blue-500 hidden dark:block" />
             <span className={cn("block dark:hidden", !showText && "sr-only")}>
               {t("light")} {t("theme").toLowerCase()}
             </span>
@@ -49,11 +49,11 @@ export function ThemeModeToggle({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          <Sun className="size-4" />
+          <Sun className="size-4 text-yellow-500" />
           {t("light")}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <Moon className="size-4" />
+          <Moon className="size-4 text-blue-500" />
           {t("dark")}
         </DropdownMenuItem>
       </DropdownMenuContent>
