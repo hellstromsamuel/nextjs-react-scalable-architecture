@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { ThemeModeToggle } from "@/components/ui/theme-mode-toggle";
+import { ThemeModeToggle } from "@/components/layout/theme-mode-toggle";
 import { Button } from "@/components/ui/button";
 import { sideBarLinks } from "@/utils/side-bar/side-bar-links";
 import { useTranslations } from "next-intl";
