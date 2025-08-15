@@ -23,61 +23,7 @@ const meta: Meta<typeof H1> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// H1 Stories
-export const H1Default: Story = {
-  args: {
-    children: "Heading 1 - Main Title",
-    className: "",
-  },
-};
-
-export const H1WithCustomClass: Story = {
-  args: {
-    children: "Heading 1 - Custom Styling",
-    className: "text-blue-600 underline",
-  },
-};
-
-// H2 Stories
-export const H2Default: Story = {
-  args: {
-    children: "Heading 2 - Section Title",
-    className: "",
-  },
-  render: (args) => <H2 {...args} />,
-};
-
-export const H2WithCustomClass: Story = {
-  args: {
-    children: "Heading 2 - Custom Styling",
-    className: "text-green-600 italic",
-  },
-  render: (args) => <H2 {...args} />,
-};
-
-// H3 Stories
-export const H3Default: Story = {
-  args: {
-    children: "Heading 3 - Subsection Title",
-    className: "",
-  },
-  render: (args) => <H3 {...args} />,
-};
-
-export const H3WithCustomClass: Story = {
-  args: {
-    children: "Heading 3 - Custom Styling",
-    className: "text-purple-600 font-bold",
-  },
-  render: (args) => <H3 {...args} />,
-};
-
-// All Typography Components Together
 export const AllHeadings: Story = {
-  args: {
-    children: "Sample Content",
-    className: "",
-  },
   render: () => (
     <div className="space-y-4 text-center">
       <H1>Main Page Title</H1>
@@ -88,7 +34,6 @@ export const AllHeadings: Story = {
   ),
 };
 
-// Typography Scale
 export const TypographyScale: Story = {
   args: {
     children: "Scale Example",
@@ -116,4 +61,50 @@ export const TypographyScale: Story = {
       </div>
     </div>
   ),
+};
+
+export const H1Default: Story = {
+  args: {
+    children: "Heading 1 - Main Title",
+    className: "",
+  },
+};
+
+export const H1WithCustomClass: Story = {
+  args: {
+    children: "Heading 1 - Custom Styling",
+    className: "text-blue-600 underline",
+  },
+};
+
+export const H2Default: Story = {
+  args: {
+    children: "Heading 2 - Section Title",
+    className: "",
+  },
+  render: (args) => <H2 {...args} />,
+};
+
+export const H2WithCustomClass: Story = {
+  args: {
+    children: "Heading 2 - Custom Styling",
+    className: "text-green-600 italic",
+  },
+  render: (args) => <H2 {...args} />,
+};
+
+export const H3Default: Story = {
+  args: {
+    children: "Heading 3 - Subsection Title",
+    className: "",
+  },
+  render: (args) => <H3 {...args} />,
+};
+
+export const H3WithCustomClass: Story = {
+  args: {
+    children: "Heading 3 - Custom Styling",
+    className: "text-purple-600 font-bold",
+  },
+  render: (args) => <H3 {...args} />,
 };
