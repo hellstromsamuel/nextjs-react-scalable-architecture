@@ -1,12 +1,26 @@
 {
   "Locale": {
-    "no": {
-      "text": "Norsk",
-      "flag": "🇳🇴"
-    },
     "en": {
       "text": "Engelsk",
       "flag": "🇺🇸"
+    },
+    "no": {
+      "text": "Norsk",
+      "flag": "🇳🇴"
+    }
+  },
+  "Pages": {
+    "Home": {
+      "title": "Hjem"
+    },
+    "Map": {
+      "title": "Kart"
+    },
+    "Locations": {
+      "title": "Mine steder"
+    },
+    "Settings": {
+      "title": "Innstillinger"
     }
   },
   "SideBar": {

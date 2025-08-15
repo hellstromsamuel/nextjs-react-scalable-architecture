@@ -9,6 +9,20 @@
       "flag": "🇺🇸"
     }
   },
+  "Pages": {
+    "Home": {
+      "title": "Home"
+    },
+    "Map": {
+      "title": "Map"
+    },
+    "Locations": {
+      "title": "Locations"
+    },
+    "Settings": {
+      "title": "Settings"
+    }
+  },
   "SideBar": {
     "home": "Home",
     "map": "Map",
