@@ -27,7 +27,6 @@ export const Default: Story = {
 
 export const WithCustomStyling: Story = {
   args: {
-    className:
-      "bg-gray-100 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700",
+    className: "bg-gray-200 dark:bg-gray-700",
   },
 };
