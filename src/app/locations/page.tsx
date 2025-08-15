@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { H1 } from "@/components/ui/typography";
 
-export default function Home() {
-  const t = useTranslations("Pages.Home");
+export default function Locations() {
+  const t = useTranslations("Pages.Locations");
 
   return (
     <main>
