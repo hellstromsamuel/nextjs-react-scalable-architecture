@@ -9,9 +9,9 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/layout/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import { useTranslations } from "next-intl";
-import { cn } from "../../lib/utils";
+import { cn } from "../../../lib/utils";
 
 interface Props {
   variant?: "outline" | "ghost";
