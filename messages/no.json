@@ -1,0 +1,23 @@
+{
+  "Locale": {
+    "no": {
+      "text": "Norsk",
+      "flag": "🇳🇴"
+    },
+    "en": {
+      "text": "Engelsk",
+      "flag": "🇺🇸"
+    }
+  },
+  "SideBar": {
+    "home": "Hjem",
+    "map": "Kart",
+    "locations": "Mine steder",
+    "settings": "Innstillinger"
+  },
+  "Theme": {
+    "dark": "Mørkt",
+    "light": "Lyst",
+    "theme": "Tema"
+  }
+}
