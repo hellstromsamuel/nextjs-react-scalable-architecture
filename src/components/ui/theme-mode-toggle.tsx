@@ -9,7 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/layout/dropdown-menu";
 import { useTranslations } from "next-intl";
 import { cn } from "../../lib/utils";
 
