@@ -7,11 +7,11 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/layout/dropdown-menu";
-import { cn } from "../../lib/utils";
+} from "@/components/ui/dropdown-menu";
+import { cn } from "../../../lib/utils";
 import { useLocale, useTranslations } from "next-intl";
-import { supportedLocales } from "../../i18n/locales";
-import { SupportedLocale } from "../../types/locale/supported-locale";
+import { supportedLocales } from "../../../i18n/locales";
+import { SupportedLocale } from "../../../types/locale/supported-locale";
 
 export function LocaleSelect({
   variant = "outline",
