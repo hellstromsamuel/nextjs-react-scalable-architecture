@@ -1,4 +1,4 @@
-import { Home, MapPin, Settings, Map, LucideIcon } from "lucide-react";
+import { Home, Settings, Map, LucideIcon, Heart } from "lucide-react";
 
 export type SideBarTranslationKey = "home" | "map" | "locations" | "settings";
 
@@ -22,11 +22,11 @@ export const sideBarLinks: SideBarLink[] = [
   {
     value: "locations",
     href: "/locations",
-    icon: MapPin,
+    icon: Heart,
   },
   {
     value: "settings",
-    href: "/contact",
+    href: "/settings",
     icon: Settings,
   },
 ];
