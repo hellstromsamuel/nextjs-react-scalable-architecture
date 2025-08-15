@@ -10,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useTranslations } from "next-intl";
 import { cn } from "../../lib/utils";
 
 interface Props {
@@ -24,6 +25,7 @@ export function ThemeModeToggle({
   className,
 }: Props) {
   const { setTheme } = useTheme();
+  const t = useTranslations("Theme");
 
   return (
     <DropdownMenu>
@@ -37,10 +39,10 @@ export function ThemeModeToggle({
             <Sun className="size-4 dark:hidden" />
             <Moon className="size-4 hidden dark:block" />
             <span className={cn("block dark:hidden", !showText && "sr-only")}>
-              Light
+              {t("light")} {t("theme").toLowerCase()}
             </span>
             <span className={cn("hidden dark:block", !showText && "sr-only")}>
-              Dark
+              {t("dark")} {t("theme").toLowerCase()}
             </span>
           </div>
         </Button>
@@ -48,11 +50,11 @@ export function ThemeModeToggle({
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           <Sun className="size-4" />
-          Light
+          {t("light")}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
           <Moon className="size-4" />
-          Dark
+          {t("dark")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
