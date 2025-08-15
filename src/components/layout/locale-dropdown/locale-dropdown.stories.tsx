@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { LocaleSelect } from "./locale-select";
+import { LocaleDropdown } from "./locale-dropdown";
 
-const meta: Meta<typeof LocaleSelect> = {
-  title: "Components/Layout/LocaleSelect",
-  component: LocaleSelect,
+const meta: Meta<typeof LocaleDropdown> = {
+  title: "Components/Layout/LocaleDropdown",
+  component: LocaleDropdown,
   parameters: {
     layout: "centered",
   },

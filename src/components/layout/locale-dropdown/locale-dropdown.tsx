@@ -13,7 +13,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { supportedLocales } from "../../../i18n/locales";
 import { SupportedLocale } from "../../../types/locale/supported-locale";
 
-export function LocaleSelect({
+export function LocaleDropdown({
   variant = "outline",
   showText = false,
   className,

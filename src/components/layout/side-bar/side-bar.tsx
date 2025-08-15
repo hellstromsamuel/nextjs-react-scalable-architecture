@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { ThemeModeToggle } from "@/components/layout/theme-mode-toggle/theme-mode-toggle";
+import { ThemeModeDropdown } from "@/components/layout/theme-mode-dropdown/theme-mode-dropdown";
 import { Button } from "@/components/ui/button";
 import { sideBarLinks } from "@/utils/side-bar/side-bar-links";
 import { useTranslations } from "next-intl";
-import { LocaleSelect } from "@/components/layout/locale-select/locale-select";
+import { LocaleDropdown } from "@/components/layout/locale-dropdown/locale-dropdown";
 
 interface Props {
   className?: string;
@@ -34,8 +34,12 @@ function SideBar({ className }: Props) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <LocaleSelect variant="outline" showText className="justify-start" />
-        <ThemeModeToggle variant="outline" showText className="justify-start" />
+        <LocaleDropdown variant="outline" showText className="justify-start" />
+        <ThemeModeDropdown
+          variant="outline"
+          showText
+          className="justify-start"
+        />
       </div>
     </aside>
   );

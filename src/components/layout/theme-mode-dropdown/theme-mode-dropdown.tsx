@@ -19,7 +19,7 @@ interface Props {
   className?: string;
 }
 
-export function ThemeModeToggle({
+export function ThemeModeDropdown({
   variant = "outline",
   showText = false,
   className,

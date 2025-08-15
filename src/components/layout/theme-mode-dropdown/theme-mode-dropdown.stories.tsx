@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { ThemeModeToggle } from "./theme-mode-toggle";
+import { ThemeModeDropdown } from "./theme-mode-dropdown";
 
-const meta: Meta<typeof ThemeModeToggle> = {
-  title: "Components/Layout/ThemeModeToggle",
-  component: ThemeModeToggle,
+const meta: Meta<typeof ThemeModeDropdown> = {
+  title: "Components/Layout/ThemeModeDropdown",
+  component: ThemeModeDropdown,
   parameters: {
     layout: "centered",
   },
