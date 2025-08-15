@@ -33,23 +33,26 @@ export function ThemeModeToggle({
           size={showText ? "default" : "icon"}
           className={className}
         >
-          <p className={cn(!showText && "sr-only")}>
-            <span className="block dark:hidden">Light</span>
-            <span className="hidden dark:block">Dark</span>
-          </p>
-          <Sun className="size-4 dark:hidden" />
-          <Moon className="size-4 hidden dark:block" />
+          <div className="flex items-center gap-2">
+            <Sun className="size-4 dark:hidden" />
+            <Moon className="size-4 hidden dark:block" />
+            <span className={cn("block dark:hidden", !showText && "sr-only")}>
+              Light
+            </span>
+            <span className={cn("hidden dark:block", !showText && "sr-only")}>
+              Dark
+            </span>
+          </div>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
+          <Sun className="size-4" />
           Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
+          <Moon className="size-4" />
           Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
