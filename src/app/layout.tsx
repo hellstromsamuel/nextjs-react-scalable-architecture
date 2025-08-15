@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
       >
         <NextIntlClientProvider>
           <ThemeProvider
@@ -39,7 +39,7 @@ export default function RootLayout({
           >
             <div className="flex h-screen bg-gray-500/5 p-4 gap-4">
               <SideBar className="bg-background rounded-xl w-64" />
-              <div className="bg-background rounded-xl p-4 h-full w-full">
+              <div className="bg-background rounded-xl p-4 md:p-8 h-full w-full">
                 {children}
               </div>
             </div>
