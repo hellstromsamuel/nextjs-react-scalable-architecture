@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import SideBar from "../components/layout/side-bar/components/side-bar";
+import SideBar from "@/components/layout/side-bar";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,19 +30,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="flex h-screen bg-gray-500/5 p-4 gap-4">
-            <SideBar className="bg-background rounded-xl" />
-            <div className="bg-background rounded-xl p-4 h-full w-full">
-              {children}
+        <NextIntlClientProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="flex h-screen bg-gray-500/5 p-4 gap-4">
+              <SideBar className="bg-background rounded-xl w-64" />
+              <div className="bg-background rounded-xl p-4 h-full w-full">
+                {children}
+              </div>
             </div>
-          </div>
-        </ThemeProvider>
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
